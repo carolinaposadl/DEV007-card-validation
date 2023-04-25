@@ -5,10 +5,69 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <header>Reserva forestal Piedras Teherán</header>
   <body>
-    <header></header>
+      <div class="box">
+      </div>
+      <div>
+      <img class="fit-picture"
+      src="bosque-sin-color.png" width="90" height="90"/>
+      </div>
+    
+    <h1>Estás a pocos pasos de finalizar tu donación</h1>
+    <p>Por favor ingresa los siguientes datos:</p>
+
+    <p>Titular de la tarjeta*</p>
+    <input type="text"> 
+
+    <p>Número de la tarjeta de crédito*</p>
+    <input id="creditCardNumber" type="tel" onkeypress="if (this.value.length > 15) return false" oninput="this.value=this.value.replace(/[^0-9]/g,'');"/>
+
+
+    <p>cvc*</p>
+    <input type="tel" onkeypress="if (this.value.length > 2) return false"/> 
+
+    <p>Mes y año de expiración*</p> 
+    <input type="date"><br>
+
+    <p>*Este campo es obligatorio</p>
+
+    <!-- conectando botón a index.js -->
+    <button id="bottonValidar">Validar</button>
+    <!-- conectando botón a index.js // usar "reload" --> 
+    <button id="bottonActualizar">Actualizar</button>
+
+    <script> src="validator.js"</script>
+
+    
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
+<!-- método para que aparezca solo el mes y el año en el calendario
+cómo formatear la salida de un fato
+
+regexp -- para que solo se puedan ingresar números
+function validarSiNumero(numero){
+  if(!/^([0-9])*$/.test(numero))
+    alert("El valor "+numero+" no es un número");
+}
+pattern del 0-9
+
+EL DE VERO:
+function onlyNum(event) {
+  const key = event.key;
+  if(!key.match (/\d|Backspace/))
+    event.preventDefault();
+
+    let expr = /[A-Za-z0-9!?-]{8,12}/;
+\A(?=[A-Za-z]+[0-9]|[0-9]+[A-Za-z])[A-Za-z0-9]{8,12}\Z
+
+
+
+Preguntas:
+- el input permite ingresar también letras y signos
+
+-->
