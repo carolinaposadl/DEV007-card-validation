@@ -14,14 +14,18 @@ const validator = {
         {
           //sacando el residuo del número y sumándolo a la parte entera - el Math.floor permite devolver la parte entera de un número
           reversedValue[i] = reversedValue[i] % 10 + Math.floor(reversedValue[i] / 10);
-        }
-        sum = sum + parseInt(reversedValue[i]); // sumando los valores del array
-      }
-      if (sum % 10 === 0) {
-        return true;
+          sum = sum + parseInt(reversedValue[i]); // sumando los valores del array
+        } else {
+          sum = sum + parseInt(reversedValue[i]);
+        } 
       } else {
-        return false;
+        sum = sum + parseInt(reversedValue[i])
       }
+    }
+    if (sum % 10 === 0) {
+      return true;
+    } else {
+      return false;
     }
   },
 
