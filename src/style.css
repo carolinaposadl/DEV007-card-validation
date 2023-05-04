@@ -1,25 +1,72 @@
-header {text-align: left
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: black;
 }
 
-body {text-align: center;
-  font-family: sans-serif;
-  }
+.imagen-bosque {
+  width: 90px;
+  height: 90px;
+}
 
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-  }
+h1 {
+  font-size: 20px;
+  color: black;
+}
 
-  input::-webkit-outer-spin-button,
+p {
+  font-size: 15px;
+  color: #585656;
+}
+
+section {
+  max-width: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: hidden;
+  border-radius: 18px;
+  background-color: white;
+}
+
+input {
+  border: hidden;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#creditCardNumber {
+  width: 350px;
+}
+
+.input-date-cvv {
+  width: 70px;
+  text-align: center;
+}
+
+#bottonValidar {
+  border: hidden;
+  padding: 10px;
+  background-color: rgb(51, 51, 239);
+  color: white;
+  border-radius: 6px;
+}
+
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-/* display: none; <- Crashes Chrome on hover */
--webkit-appearance: none;
-margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
 }
 
 input[type=number] {
--moz-appearance:textfield; /* Firefox */
+  -moz-appearance: textfield;
+  /* Firefox */
 }
