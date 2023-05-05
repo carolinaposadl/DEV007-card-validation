@@ -20,24 +20,24 @@ p {
 }
 
 section {
+  border: hidden;
+  background-color: white;
+  border-radius: 18px;
   max-width: 500px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border: hidden;
-  border-radius: 18px;
-  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 input {
   border: hidden;
   background-color: whitesmoke;
-  padding: 10px;
   border-radius: 6px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -45,9 +45,15 @@ input {
   width: 350px;
 }
 
-.input-date-cvv {
+.date-cvv {
   width: 70px;
   text-align: center;
+}
+
+.expiration-date {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 #bottonValidar {

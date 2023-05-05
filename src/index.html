@@ -11,7 +11,7 @@
   <main>
     <section>
       <img class="imagen-bosque" src="bosque-ícono.png" alt="bosque-ícono">
-      <h1>Estás a un paso de finalizar tu donación.</h1><br>
+      <h1>Estás a un paso de finalizar tu donación.</h1>
       <p>Por favor ingresa los siguientes datos:</p>
 
       <p>Número de tarjeta</p>
@@ -19,14 +19,16 @@
         oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
 
       <p>Fecha de expiración</p>
-      <input type="month" placeholder="MM" class="input-date-cvv" onkeypress="if (this.value.length > 1) return false"
-        oninput="this.value=this.value.replace(/[^0-9]/g,'');" /><br><br>
+      <div class="expiration-date">
+        <input type="tel" placeholder="MM" class="date-cvv" onkeypress="if (this.value.length > 1) return false"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');" /><br><br>
 
-      <input type="month" placeholder="AA" class="input-date-cvv" onkeypress="if (this.value.length > 1) return false"
-        oninput="this.value=this.value.replace(/[^0-9]/g,'');" /><br><br>
+        <input type="tel" placeholder="AA" class="date-cvv" onkeypress="if (this.value.length > 1) return false"
+          oninput="this.value=this.value.replace(/[^0-9]/g,'');" /><br><br>
+      </div>
 
       <p>CVV</p>
-      <input type="tel" class="input-date-cvv" onkeypress="if (this.value.length > 2) return false"
+      <input type="tel" class="date-cvv" onkeypress="if (this.value.length > 2) return false"
         oninput="this.value=this.value.replace(/[^0-9]/g,'');" /><br><br>
 
       <button id="bottonValidar">Completar pago</button>
