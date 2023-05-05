@@ -1,5 +1,23 @@
 # Tarjeta de crédito válida
 
+## Descripción
+
+Se trata de una interfaz que muestra el paso final de un proceso de pago a través de una tarjeta de crédito. La interfaz permite ingresar un número de tarjeta, una fecha de expiración y un CVV. Y, finalmente, completar un pago a través de un botón. 
+
+El objetivo de los usuarios es finalizar el pago de una donación a una reserva forestal (sugerida por el ícono-logo que está al inicio del formulario). La interfaz está pensada para un público general, por esto se emplearon colores neutros como el blanco, gris y negro principalmente.
+
+## Implementación del proyecto
+
+Este proyecto utiliza el algoritmo de Luhn para verificar si el número de tarjeta ingresado es válido o inválido. 
+
+Inicialmente el usuario debe ingresar un número de tarjeta, luego una fecha de expiración y finalmente un código de seguridad. Los dos últimos no tienen funcionalidad dentro del proyecto, solo se han agregado para simular una situación de la vida real en la que se deba implementar el algortimo de Luhn. 
+
+En cuanto el usuario dé clic en “Completar pago”, debe aparecer un alert que indique si el número ingresado es válido o no. Adicionalmente, el número ingresado aparece enmascarado.
+
+
+
+# Tarjeta de crédito válida
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
